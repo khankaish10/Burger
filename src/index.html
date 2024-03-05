@@ -13,6 +13,80 @@
 </head>
 <link rel="stylesheet" href="/dist/output.css">
 <body>
-    
+
+    <!-- Navbar -->
+    <header class="bg-primaryColor z-50 fixed top-0 left-0 w-full">
+        <nav class="container h-14 relative flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl uppercase  font-oswald">BUR<span class="text-secondaryColor">GER</span></a>
+            </div>
+            <div id="nav_menu" class="hidden absolute top-0 left-0
+             bg-primaryColor w-full py-14 border-b border-secondaryColor
+             md:block md:static md:w-auto md:py-0 md:ml-auto md:border-none">
+                <ul class="flex flex-col items-center gap-4 md:flex-row">
+                    <li>
+                        <a href="#home" class="nav__link text-secondaryColor hover:text-secondaryColor">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link hover:text-secondaryColor">About</a>
+                    </li>
+                    <li>
+                        <a href="#menu" class="nav__link hover:text-secondaryColor">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#review" class="nav__link hover:text-secondaryColor">Review</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link hover:text-secondaryColor">Contact</a>
+                    </li>
+                </ul>
+                
+                <div id="nav_close" class="md:hidden absolute right-4 top-4 text-xl cursor-pointer">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex gap-5 items-center ">
+                <i class="text-2xl ri-moon-line cursor-pointer ml-4"></i>
+                <div class="md:hidden" id="hamburger">
+                    <i class="text-2xl cursor-pointer ri-menu-2-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section id="hero">
+            <div class="container flex flex-col items-center gap-10
+                md:flex-row">
+                <div class="mx-auto md:flex-basis-1/2 lg:basis-9/20 animate-movingY">
+                    <img src="./img/home-image.png" alt="home image" class="w-60 md:w-full">
+                </div>
+                <div class="text-center md:text-start">
+                    <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
+                    <div class="seperator mx-auto md:mx-0"></div>
+                    <P class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla corporis natus suscipit explicabo blanditiis facere consectetur id unde rem sunt fuga repudiandae, doloribus cumque quasi neque fugit quam. Voluptatibus impedit nemo ipsam praesentium corrupti ab, tempore explicabo numquam. Provident, iste!</P>
+
+                    <div class="flex justify-center md:justify-start gap-5 items-center py-10 md:basis-3/5">
+                        <div class="text-center">
+                            <i class="fa-solid fa-utensils text-4xl text-secondaryColor"></i>
+                            <br /> Delicious
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-solid fa-droplet text-4xl text-secondaryColor"></i>
+                            <br /> Fresh
+                        </div>
+                        <div class="text-center">
+                            <i class="fa-brands fa-envira text-4xl text-secondaryColor"></i>
+                            <br /> Organic
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary"> Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
 </body>
 </html>
