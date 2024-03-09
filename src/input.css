@@ -5,7 +5,7 @@
 
 @layer base{
     body {
-        @apply text-white bg-primaryColor font-dmsans;
+        @apply text-white bg-primaryColor font-dmsans dark:bg-darkColor;
     }
    section {
     @apply pt-10 pb-4 md:pt-20;
@@ -42,4 +42,9 @@
         @apply text-xs text-paragraphColor leading-5;
     }
    
+}
+
+.tabs_wrap ul li:hover, 
+.tabs_wrap ul li.active {
+    @apply bg-secondaryColor;
 }
